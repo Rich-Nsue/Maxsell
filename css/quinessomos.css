@@ -1,0 +1,490 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+   
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-y: auto;
+    background-color: var(--VeryPaleCyan);
+}
+body {
+    width: fit-content;
+}
+
+:root {
+    --Pink: rgb(255, 0, 128);;
+    --VeryPaleCyan: hsl(193, 100%, 96%);
+    --White: hsl(193, 100%, 100%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --GrayishBlue: hsl(208, 11%, 55%);
+    --DarkBlue: rgba(45, 8, 211, 0.849);
+    --Violette: rgba(10, 3, 51, 0.849);
+}
+
+
+
+
+/*
+video{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.06);
+   
+} */
+
+
+/*........ Inicio pagina......... */
+img {
+    width: 100%;
+}
+
+main {
+    width: fit-content;
+}
+
+.menu_bar {
+    background-color: var(--VeryDarkCyan);
+    position: fixed;
+    width: 100%;
+    opacity: none;
+    height: auto;
+    top: 0%;
+    left: 0%;
+    z-index: 999;
+}
+
+.menu_bar ul {
+    text-align: center;
+    position: fixed;
+    top: 6em;
+    right: 100%;
+    padding-top: 2em;
+    transition: all .5s;
+    background-color: var(--Violette);
+    height: 100%;
+    width: 70%;
+}
+
+.menu_bar ul li {
+    list-style-type: none;
+    padding-top: 5em;
+}
+.menu_bar ul li a {
+    text-decoration: none;
+    color: var(--White);
+    font-size: 2rem;
+   line-height: 1.5;
+    font-weight: 600;
+    transition: color .5s linear;
+}
+
+.menu_bar ul li a.active {
+    color: var(--Pink);
+}
+
+.menu_bar ul li a:hover {
+    color: var(--Pink);
+}
+
+
+.check_icon {
+    display: block;
+    float: right;
+    color: var(--White);
+    line-height: 2;
+    font-size: 3em;
+    margin-right: 1.5em;
+}
+#check {
+   display: none;
+}
+
+#check:checked ~ ul {
+    right: 0;
+}
+
+
+main {
+    width: 100%;
+}
+
+
+
+/*......Eventos Pagina.......*/
+
+.container {
+    /* Image styling */
+    background: linear-gradient(hsla(0, 0%, 9%, 0.3), hsla(0, 0%, 9%, 0.3)), url('../images/successful-excited-multi-ethnic-businesspeople-celebrating-winning-business-collaboration-rising-hands-while-working-startup-company-office-happy-businessteam-enjoying-triumph-workplace.jpg');
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.content{
+    padding: 15rem 5rem;
+}
+
+.content h1{
+    color: var(--White);
+    font-size: 2.5em;
+    font-weight: 600;
+    animation: moveIntop;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+.article_container {
+    margin: 5rem 5rem;
+
+}
+
+.article_container h2 {
+    color: var(--VeryDarkCyan);
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+
+.article_container p{
+    color: var(--GrayishBlue);
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+
+.article_container span{
+    color: var(--Pink);
+}
+
+.doc_container {
+    margin: 2rem 5rem;
+}
+
+.doc_container h3 {
+    color: var(--VeryDarkCyan);
+    font-size: 2em;
+}
+
+.doc_container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 25rem;
+    margin-top: 2rem;
+}
+
+
+footer {
+    background-color: var(--VeryDarkCyan);
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 0 2rem;
+    margin-top: 10rem;
+}
+.logo_img img{
+    width: 20rem;
+    height: auto;
+}
+    .logo_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info_container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 5rem;
+        margin: 2rem  5rem;
+        line-height: 1.5;
+        color: white;
+        font-size: 1.5em
+    }
+    .info_container .contact {
+        width: 100%;
+        height: auto;
+    }
+    .info_container h5 {
+        padding: 1em 0;
+        color: var(--White);
+    }
+    .info_container p {
+        color: var(--VeryPaleCyan);
+    }
+    footer .copy_right {
+        text-align: center;
+        color: var(--VeryPaleCyan);
+        font-size: 1.5em;
+    }
+    .info_container .socials .social_icons {
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: 1.5em;
+        gap: 2rem;
+    }
+    .info_container .socials .fa-twitter:hover {
+        color: black;
+        transition: all .4s ease;
+        transform: translateY(-0.5rem);
+    }
+    .info_container .socials .fa-linkedin-in:hover {
+        color: rgb(0, 102, 255);
+        transition: all .4s ease;
+        transform: translateY(-0.5rem);
+    }
+    .info_container .socials .fa-facebook:hover {
+        color: blue;
+        transition: all .4s ease;
+        transform: translateY(-0.5rem);
+    }
+    .info_container .socials .fa-instagram:hover {
+        color: rgb(255, 0, 128);
+        transition: all .4s ease;
+        transform: translateY(-0.5rem);
+    }
+
+
+
+/* Animation */
+@keyframes moveInbottom{
+    0%{
+        opacity: 0;
+        transform:translateY(-20px);
+    }
+    70%{
+        opacity: 1;
+        transform:translateY(10px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+    }
+
+
+    @keyframes moveIntop{
+        0%{
+            opacity:0;
+            transform: translateY(-20px);
+        }
+        70%{
+            opacity:0;
+            transform:translateY(10px);
+        }
+        100%{
+            opacity:1;
+            transform:translateY(0px);
+        }
+        }
+
+
+@media only screen and (min-width: 768px) {
+    .doc_container iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 50rem;
+        margin-top: 2rem;
+    }
+
+    .content h1{
+        font-size: 4em;
+    }
+    
+    .container {
+        height: 50vh;
+        width: 100%;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .check_icon {
+        display: none;
+    }
+    .menu_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--VeryDarkCyan);
+        position: fixed;
+        width: 100%;
+        opacity: 0.85;
+        height: auto;
+        padding: 2rem 8rem;
+        top: 0%;
+        left: 0%;
+        z-index: 999;
+    }
+
+    .menu_bar ul {
+        position: relative;
+        padding-top: 0;
+        background-color: var(--none);
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14rem;
+    }
+
+    .menu_bar ul li {
+        list-style-type: none;
+        padding-top: 0;
+    }
+    .menu_bar ul li a {
+        position: relative;
+        text-decoration: none;
+        color: var(--White);
+        font-size: 1.5rem;
+        padding: 0 0rem;
+        font-weight: 700;
+        transition: all .5s ease;
+        border-bottom: 2px solid transparent;
+    }
+    
+    
+    .menu_bar ul li a:after{
+        content: "";
+        position: absolute;
+        background-color: var(--Pink);
+        height: 0.5rem;
+        width: 0%;
+        left: 0;
+        top: 2rem;
+        transition: 0.4s;
+    }
+    .menu_bar ul li a:hover:after{
+        width: 100%;
+        background-color: var(--White);
+    }
+    .menu_bar li a:hover,
+    .menu_bar li a.active{
+        color: var(--Pink);
+    }
+
+
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .container .content h1 {
+        padding-top: 20rem;
+        font-size: 4rem;
+        color: var(--White);
+        text-align: center;
+    }
+
+    .article_container {
+        margin: 8em 8em;
+    }
+    
+
+    .doc_container {
+        margin: 2rem 8rem;
+    }
+
+    .doc_container iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 50rem;
+        margin-top: 2rem;
+    }
+    
+
+    footer {
+        background-color: var(--VeryDarkCyan);
+        width: 100%;
+        height: auto;
+        text-align: left;
+        padding: 0 2rem;
+        margin-top: 10rem;
+    }
+    .logo_img img{
+        width: 20rem;
+        height: auto;
+    }
+    .logo_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info_container {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10rem;
+        margin: 2rem  8rem;
+        line-height: 1.5;
+        color: white;
+        font-size: 1.5em
+    }
+    .info_container .contact {
+        width: 100%;
+        height: auto;
+    }
+    .info_container h5 {
+        padding: 1em 0;
+        color: var(--White);
+    }
+    .info_container p {
+        color: var(--VeryPaleCyan);
+    }
+    footer .copy_right {
+        text-align: center;
+        color: var(--VeryPaleCyan);
+        font-size: 1.5em;
+    }
+    .info_container .socials .social_icons {
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: 1.5em;
+        gap: 2rem;
+    }
+    .info_container .socials .fa-twitter:hover {
+        color: black;
+        transition: all .4s ease;
+        transform: translateY(-0.5rem);
+    }
+    .info_container .socials .fa-linkedin-in:hover {
+        color: rgb(0, 102, 255);
+        transition: all .4s ease;
+        transform: translateY(-0.5rem);
+    }
+    .info_container .socials .fa-facebook:hover {
+        color: blue;
+        transition: all .4s ease;
+        transform: translateY(-0.5rem);
+    }
+    .info_container .socials .fa-instagram:hover {
+        color: rgb(255, 0, 128);
+        transition: all .4s ease;
+        transform: translateY(-0.5rem);
+    }
+}
+
